@@ -154,6 +154,9 @@ ul{
         background-color: rgba(30, 15, 28, 1) ;
     }
 
+    ul{
+        height: auto;
+    }
     .footer-low{
         display: block;
     }
