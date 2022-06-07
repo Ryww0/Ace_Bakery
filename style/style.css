@@ -1,12 +1,12 @@
-*{
+body{
     margin: 0;
     width: auto;
     height: 100vh;
 }
 
-.taille{
-    width: 100%;
-    height: 70%;
+.container {
+max-width: 90%;
+margin: auto;
 }
 
 :root{
@@ -26,9 +26,134 @@
 }
 
 .close-title{
-    height: 70%;
+    height: 15%;
 }
 
-h2 , h1{
-    height: 40px;
+h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
+h3 {
+    margin: 0;
+    font-family: 'dancing script';
+    font-size: 1.8rem;
+}
+
+li{
+    margin-top: 10px;
+    font-family: montserrat ;
+}
+
+ul{
+    margin-top: 50px;
+    list-style-type: none;
+    width: 30%;
+    height: 90%;
+}
+
+.footer-low{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactez-nous {
+    height: 500px;
+    width: 800px;
+    padding: 0 50px 0 50px;
+    background: rgba(30, 15, 28, 1);
+  }
+
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div > label {
+    margin: 20px;
+  }
+  
+  form div > input, form div > select, form div > textarea {
+    background: rgba(210, 210, 210, 1);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Montserrat, "sans-serif";
+  }
+  
+  form div > input, form div > select {
+    height: 25px;
+    padding-left: 10px;
+  }
+  
+  form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+  
+  form div > textarea {
+    height: 100px;
+    padding: 15px 0px 0px 10px;
+  }
+  
+  form div > input::placeholder, form div > textarea::placeholder {
+    color: white;
+  }
+  
+  form div > select:invalid {
+    color: white;
+  }
+  
+  form div > select option {
+    background: white;
+    color: #303030;
+  }
+  
+  form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+  }
+  
+  form button {
+    width: 200px;
+    max-width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background: white;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+  }
+
+#sujet, button:hover{
+      cursor: pointer;
+  }
+
+  @media (max-width: 780px) {
+
+    .container {
+        max-width: 90%;
+        margin: auto;
+        }
+
+    body{
+        background-color: rgba(30, 15, 28, 1) ;
+    }
+
+    .footer-low{
+        display: block;
+    }
+
+    .contactez-nous {
+
+        height: 500px;
+        width: 600px;
+        padding: 50px 50px 0 50px;
+        background: rgba(30, 15, 28, 1);
+      }
+  }
+      
