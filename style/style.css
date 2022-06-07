@@ -145,28 +145,48 @@ ul{
 
   @media (max-width: 768px) {
 
-    .container {
+    .background-footer{
+        width: 112%;
+    }
+    .container{
         max-width: 90%;
         margin: auto;
+        justify-content: center;
         }
 
     body{
         background-color: rgba(30, 15, 28, 1) ;
     }
 
+    .close-title{
+        height: 20%;
+        width: auto;
+        text-align: center;
+    }
+
     ul{
         height: auto;
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
     .footer-low{
         display: block;
+        width: 100%;
+        margin: 0;
     }
 
     .contactez-nous {
-
         height: 500px;
-        width: 600px;
-        padding: 50px 50px 0 50px;
+        width: 100%;
+        padding-top: 50px ;
+        padding: 0%;
         background: rgba(30, 15, 28, 1);
       }
+      .taille{
+          margin: 0;
+          width: 90%;
+      }
+    
   }
       
