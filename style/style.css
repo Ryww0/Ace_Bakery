@@ -4,6 +4,7 @@ body{
     height: 100vh;
 }
 
+                        /* mise en forme footer + text*/
 .container {
 max-width: 90%;
 margin: auto;
@@ -55,15 +56,22 @@ ul{
 .footer-low{
     display: flex;
     justify-content: space-between;
+    height: 500px;
+    width: 1400px;
 }
 
+
+                        /* mise ne forme formulaire */
 .contactez-nous {
-    height: 500px;
+    height: 450px;
     width: 800px;
     padding: 0 50px 0 50px;
     background: rgba(30, 15, 28, 1);
   }
 
+  h1{
+      margin: 0;
+  }
   
   form div {
     display: flex;
@@ -71,7 +79,7 @@ ul{
   }
   
   form div > label {
-    margin: 20px;
+    margin-top: 20px;
   }
   
   form div > input, form div > select, form div > textarea {
@@ -132,8 +140,10 @@ ul{
 #sujet, button:hover{
       cursor: pointer;
   }
+                    
+                    /* responsive  */
 
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
 
     .container {
         max-width: 90%;
