@@ -1,33 +1,10 @@
-body{
-    margin: 0;
-    width: auto;
-    height: 100vh;
-}
 
                         /* mise en forme footer + text*/
-.container {
-max-width: 90%;
-margin: auto;
-}
-
-:root{
-    color: rgba(210, 210, 210, 1);
-}
-
-.container{
-    display: flex;
-    max-width: 75%;
-    margin: auto;
-}
 
 .background-footer{
     background-color: rgba(30, 15, 28, 1);
     width:100%;
     height:100%
-}
-
-.close-title{
-    height: 15%;
 }
 
 h2 {
