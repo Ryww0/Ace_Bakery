@@ -129,7 +129,8 @@ ul{
         max-width: 90%;
         margin: auto;
         justify-content: center;
-        }
+        text-align: center;
+      }
 
     body{
         background-color: rgba(30, 15, 28, 1) ;
