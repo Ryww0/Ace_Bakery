@@ -46,11 +46,37 @@ window.addEventListener('scroll', () => {
      }
 })
 
+
 // loader
+let stopScroll = 0;
+
+const noScroll = () => {
+    
+    document.addEventListener("scroll", () => {
+        if (stopScroll == 1){
+            return;}
+
+    window.scroll(0,0);
+   })
+}
 const loader = document.querySelector('.loader');
 
-window.addEventListener('load', () => {
+const loadClass = () => {
+loader.classList.add('fondu-out');
+stopScroll = 1;
+}
 
-    loader.classList.add('fondu-out');
+ 
+ window.addEventListener('load', () => {
+    
+    setTimeout(loadClass, 2000);
+})
+
+noScroll();
+
+windows.addEventListener('reload', (event)=>{
+    event.preventDefault();
+    windows.scoll(0,0);
+    windows.location.reload;
 
 })
