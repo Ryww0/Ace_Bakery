@@ -27,28 +27,28 @@ function closeHoraires() {
 }
 
 // anime scroll
+
 let media768 = window.matchMedia("(min-width: 768px)");
 
 const slidingAnime = document.querySelector(".slideIn");
-
-const  mediaquerrie = ()=> { if(media768.matches){
-window.addEventListener("scroll", () => {
+const  mediaquerrie = ()=> { 
+  
+if (media768.matches){
+window.addEventListener("scroll", (e) => {
   const { scrollTop, clientHeight } = document.documentElement;
-
   const topElemetToTopViewport = slidingAnime.getBoundingClientRect().top;
-
+  
   if (
-    scrollTop >
-    (scrollTop + topElemetToTopViewport).toFixed() - clientHeight * 0.8
+    scrollTop > (scrollTop + topElemetToTopViewport).toFixed() - clientHeight * 0.8
   ) {
     slidingAnime.classList.add("start");
   }
-})}
-else{
-  window.addEventListener("scroll", () => {
-    const { scrollTop, clientHeight } = document.documentElement;
-  
-    const topElemetToTopViewport = slidingAnime.getBoundingClientRect().top;
+}
+)} else{
+      window.addEventListener("scroll", (e) => {
+
+    // const { scrollTop, clientHeight } = document.documentElement;
+    // const topElemetToTopViewport = slidingAnime.getBoundingClientRect().top;
   
     if (
       scrollTop >
@@ -60,6 +60,8 @@ else{
 }}
 
 mediaquerrie();
+
+
 // loader
 let stopScroll = 0;
 
